@@ -1,6 +1,12 @@
 package com.example.demo.model;
 
+import jakarta.persistence.*;
+
+
+@Entity
 public class Employee {
+	
+	@Id
 	private int id;
 	private String name;
 	private String phone;
@@ -49,6 +55,11 @@ public class Employee {
 		this.name = name;
 		this.phone = phone;
 		this.dept = dept;
+	}
+
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	
 	
